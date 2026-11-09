@@ -1,9 +1,12 @@
 import "./Header.css";
 
-function Header() {
+function Header({ handleAdd }) {
   return (
-    <header className="header">
-      <h1>Expense Tracker App</h1>
+    <header className="header-container">
+      <h1 className="header-title">Expense Tracker App</h1>
+      <button className="header-button" onClick={handleAdd}>
+        Add
+      </button>
     </header>
   );
 }
